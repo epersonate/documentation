@@ -1,0 +1,23 @@
+{
+  "docs": {
+    "Getting started": ["installation", "setup-guide"],
+    "Setup Guide": [
+      "front-end-widget",
+      "personal-access-token",
+      "back-end-authentication",
+      "verify-impersonation-api"
+    ],
+    "SDKS": [
+      "node-sdk",
+      "adonis",
+      "ruby-sdk",
+      "python-sdk",
+      "php-sdk"
+    ],
+    "Reference Guide": [
+      "live-demo",
+      "impersonation-configurations",
+      "glossary"
+    ]
+  }
+}
