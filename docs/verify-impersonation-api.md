@@ -34,7 +34,9 @@ sidebar_label: Verify Impersonation API
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `{ userId : 12, valid : true }`
+    **Content:** `{ userId : '12', valid : true }`
+
+  **Note** userId is a string. You might need to convert it to an integer.
  
 * **Error Response:**
 

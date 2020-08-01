@@ -53,7 +53,7 @@ const User = use('App/Models/User');
 
 const Epersonate = use('epersonate');
 const epersonate = new Epersonate.Client({
-  token: Env.get('EPERSONATED_PERSONAL_ACCESS_TOKEN')
+  token: Env.get('EPERSONATE_PERSONAL_ACCESS_TOKEN')
 });
 
 class Impersonation {

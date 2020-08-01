@@ -128,7 +128,7 @@ class Index extends React.Component {
           {
             content:
               'See how Epersonate could positively impact your product with our [live demo](https://demo.epersonate.com/).',
-            image: `${baseUrl}img/tinder.png`,
+            image: `${baseUrl}images/epersonate_demo.gif`,
             imageAlign: 'right',
             title: 'Live Demonstration',
           },
