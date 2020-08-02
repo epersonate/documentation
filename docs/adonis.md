@@ -10,13 +10,13 @@ sidebar_label: AdonisJS
 Similarly to NodeJS, add our node SDK:
 
 ```bash
-npm install -i epersonate
+npm install -i @epersonate/epersonate
 ```
 
 Create an Adonis middleware:
 
 ```bash
-adonis middleware epersonate --http
+adonis middleware impersonation --http
 ```
 
 Add to your kernel global middleware config:
@@ -25,7 +25,7 @@ Add to your kernel global middleware config:
 const namedMiddleware = {
   auth: 'Adonis/Middleware/Auth',
   guest: 'Adonis/Middleware/AllowGuestOnly',
-  epersonate: 'App/Middleware/Epersonate'
+  impersonate: 'App/Middleware/Impersonation'
 }
 ```
 
@@ -37,10 +37,12 @@ Route.group(() => {
     * Your protected Routes.
     */
     (...)
-}).middleware('epersonate').middleware('auth')
+}).middleware('impersonate').middleware('auth')
 ```
 
-In your newly created App/Middleware/Epersonate.js:
+Add the `impersonate` middleware right after your `auth` middleware if you want to make sure that an admin is impersonating.
+
+In your newly created App/Middleware/Impersonation.js:
 
 ```js
 'use strict'
@@ -63,18 +65,17 @@ class Impersonation {
    * @param {Function} next
    */
   async handle ({request, auth}, next) {
-    try {
-      const res = await epersonate.verify({request});
-      if (!res.body.valid)
-        return await next();
+    // Verify that impersonator is an employee (Replace with your own verification logic)
+    const company = await auth.user.company().fetch();
+    if (company.id !== 1)
+       return await next();
 
-      const user = await User.find(res.body.userId);
+    const impersonation = await epersonate.verify({request});
+    if (impersonation.valid) {
+      const user = await User.find(impersonation.userId);
       auth.user = user;
-      await next();
-    } catch (e) {
-      return await next();
     }
-    
+    return await next();
   }
 }
 

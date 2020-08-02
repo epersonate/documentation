@@ -9,13 +9,16 @@ sidebar_label: Node SDK
 First, install the EPersonate SDK:
 
 ```bash
-npm install -i epersonate
+npm install -i @epersonate/epersonate
 ```
 
 Then in your authentication middleware method:
 
 ```js
-import Epersonate from 'epersonate';
+const Epersonate = require('@epersonate/epersonate');
+// Or with ES6 syntax
+import * as Epersonate from '@epersonate/epersonate';
+
 const epersonate = new Epersonate.Client({
   token: Env.get('EPERSONATE_PERSONAL_ACCESS_TOKEN')
 });

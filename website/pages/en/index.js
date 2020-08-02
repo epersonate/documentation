@@ -97,9 +97,8 @@ class Index extends React.Component {
         {[
           {
             content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
+              'Install Epersonate in under 15 minutes' +
+              'Generate the impersonation system of your application using our open-source agents and start fixing your product without invading your customer\'s privacy.', 
             image: `${baseUrl}img/undraw_code_review.svg`,
             imageAlign: 'left',
             title: 'Wonderful SVG Illustrations',
@@ -109,31 +108,36 @@ class Index extends React.Component {
     );
 
     const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              'Get started in less than 10 minutes',
-            image: `${baseUrl}img/undraw_dev_focus.svg`,
-            imageAlign: 'right',
-            title: 'Ready to use SDKs',
-          },
-        ]}
-      </Block>
+      <div style={{backgroundColor:'#2f4566', color:'white'}}>
+        <Block>
+          {[
+            {
+              content:
+                'Works with popular stacks. Epersonate is compatible with all kinds of application frameworks and software architectures.',
+              image: `${baseUrl}img/undraw_dev_focus.svg`,
+              imageAlign: 'right',
+              title: 'Get started in less than 15 minutes'
+            },
+          ]}
+        </Block>
+      </div>
+      
     );
 
     const LearnHow = () => (
-      <Block background="light">
-        {[
-          {
-            content:
-              'See how Epersonate could positively impact your product with our [live demo](https://demo.epersonate.com/).',
-            image: `${baseUrl}images/epersonate_demo.gif`,
-            imageAlign: 'right',
-            title: 'Live Demonstration',
-          },
-        ]}
-      </Block>
+      <div style={{backgroundColor:'#193055', color:'white'}}>
+        <Block>
+          {[
+            {
+              content:
+                'See how Epersonate could positively impact your product with our [live demo](/documentations/live-demo.html).',
+              image: `${baseUrl}images/demo.gif`,
+              imageAlign: 'left',
+              title: 'Live Demonstration',
+            },
+          ]}
+        </Block>
+      </div>
     );
 
     const Features = () => (
@@ -177,7 +181,7 @@ class Index extends React.Component {
       const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
 
       return (
-        <div className="productShowcaseSection paddingBottom">
+        <div className="productShowcaseSection ">
           <h2>Who is Using This?</h2>
           <p>This project is used by all these people</p>
           <div className="logos">{showcase}</div>
@@ -193,10 +197,10 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
-        <div className="mainContainer">
+        <div>
           <Description />
-          <LearnHow />
           <Features />
+          <LearnHow />
         </div>
       </div>
     );

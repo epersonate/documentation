@@ -20,7 +20,7 @@ sidebar_label: Verify Impersonation API
 
     | Name        | Type           | Value  |
     | ------------- |:-------------:| -----:|
-    | `Authorization` Personal Access Token generated previously in the [setup guide](https://docs.epersonate.com/docs/personal-access-token) | `string` | `Bearer <EPERSONATE_PERSONAL_ACCES_TOKEN>` |
+    | `Authorization` Personal Access Token generated previously in the [setup guide](http://docs.epersonate.com/docs/personal-access-token) | `string` | `Bearer <EPERSONATE_PERSONAL_ACCES_TOKEN>` |
 
 
 * **Data Params**
@@ -29,7 +29,7 @@ sidebar_label: Verify Impersonation API
  
     | Name        | Type           | Value  |
     | ------------- |:-------------:| -----:|
-    | `token` Generated in the [previous section of this guide](https://docs.epersonate.com/docs/back-end-authentication)| `string` | `<IMPERSONATION_TOKEN>` |
+    | `token` Generated in the [previous section of this guide](http://docs.epersonate.com/docs/back-end-authentication)| `string` | `<IMPERSONATION_TOKEN>` |
 
 * **Success Response:**
 
