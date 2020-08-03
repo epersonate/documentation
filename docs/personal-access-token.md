@@ -4,9 +4,9 @@ title: Personal Access Token
 sidebar_label: Personal Access Token
 ---
 
-To communicate with EPersonate's API, you will need to generate a personal access token. 
+To communicate with ePersonate's API, you will need to generate a personal access token. 
 
-Go to the [EPersonate Setting Dashboard](https://epersonate.com/app/settings) > Personal Access Token > Create Personal Access Token.
+Go to the [ePersonate Setting Dashboard](https://epersonate.com/app/settings) > Personal Access Token > Create Personal Access Token.
 
 ![pat](/images/pat_1.png)
 

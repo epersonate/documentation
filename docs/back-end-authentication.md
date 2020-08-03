@@ -4,9 +4,9 @@ title: Back End Authentication
 sidebar_label: Back End Authentication
 ---
 
-## How does EPersonate works
+## How does ePersonate works
 
-A quick background on how EPersonate works internally will help you implement it correctly in your system.
+A quick background on how ePersonate works internally will help you implement it correctly in your system.
 
 When you want to impersonate a customer, you will first go to your [Dashboard](https://epersonate.com/app/impersonations/me) and create a new impersonation. 
 
@@ -18,7 +18,7 @@ To create a new impersonation, click on the (+) sign at the bottom right of the 
 ![backendauthentication](/images/backendauthentication_2.png)
 
 
-EPersonate will generate a unique Json Web Token that you will use to impersonate your customer.
+ePersonate will generate a unique Json Web Token that you will use to impersonate your customer.
 
 To start an impersonation, copy the impersonation link and open it in a new tab.
 

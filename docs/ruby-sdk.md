@@ -6,7 +6,7 @@ sidebar_label: Ruby SDK
 
 ### Add Epersonate to your Ruby backend
 
-First, install the EPersonate Ruby SDK:
+First, install the ePersonate Ruby SDK:
 
 ```bash
 gem install epersonate

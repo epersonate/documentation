@@ -7,7 +7,7 @@ sidebar_label: Live Demo
 ![register](/images/demo.gif)
 
 
-If you'd like to see EPersonate in action, go ahead and login to [EPersonate Demo Account](https://epersonate.com) using the following credentials:
+If you'd like to see ePersonate in action, go ahead and login to [ePersonate Demo Account](https://epersonate.com) using the following credentials:
 
 ```
 email: demo@epersonate.com

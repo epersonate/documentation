@@ -30,7 +30,7 @@ By default, when an impersonation starts, the SDK will add the `x-epersonate` se
 
 If you are using cookies to authenticate to your back-end, you are done! 
 
-When an admin starts an impersonation, the EPersonate widget adds a `x-epersonate` cookie to your domain.
+When an admin starts an impersonation, the ePersonate widget adds a `x-epersonate` cookie to your domain.
 
 
 ## Using Session

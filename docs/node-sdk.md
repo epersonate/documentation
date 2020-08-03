@@ -6,7 +6,7 @@ sidebar_label: Node SDK
 
 ### Add Epersonate to your NodeJS backend
 
-First, install the EPersonate SDK:
+First, install the ePersonate SDK:
 
 ```bash
 npm install -i @epersonate/epersonate

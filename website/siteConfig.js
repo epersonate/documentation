@@ -57,7 +57,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} EPersonate`,
+  copyright: `Copyright © ${new Date().getFullYear()} ePersonate`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.

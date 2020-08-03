@@ -4,7 +4,7 @@ title: Installation Guide
 sidebar_label: Installation
 ---
 
-This is a step-by-step tutorial on how to install EPersonate
+This is a step-by-step tutorial on how to install ePersonate
 
 ## Register
 
